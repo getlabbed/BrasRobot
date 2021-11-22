@@ -103,5 +103,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/testtt.dir/DependInfo.cmake"
+  "CMakeFiles/BrasRobot.dir/DependInfo.cmake"
   )

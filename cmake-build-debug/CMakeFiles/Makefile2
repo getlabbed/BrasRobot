@@ -52,7 +52,7 @@ CMAKE_BINARY_DIR = C:\Git\BrasRobot\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles\testtt.dir\all
+all: CMakeFiles\BrasRobot.dir\all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -60,34 +60,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles\testtt.dir\clean
+clean: CMakeFiles\BrasRobot.dir\clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/testtt.dir
+# Target rules for target CMakeFiles/BrasRobot.dir
 
 # All Build rule for target.
-CMakeFiles\testtt.dir\all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Git\BrasRobot\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target testtt"
-.PHONY : CMakeFiles\testtt.dir\all
+CMakeFiles\BrasRobot.dir\all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Git\BrasRobot\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target BrasRobot"
+.PHONY : CMakeFiles\BrasRobot.dir\all
 
 # Build rule for subdir invocation for target.
-CMakeFiles\testtt.dir\rule: cmake_check_build_system
+CMakeFiles\BrasRobot.dir\rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git\BrasRobot\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Git\BrasRobot\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles\testtt.dir\rule
+.PHONY : CMakeFiles\BrasRobot.dir\rule
 
 # Convenience name for target.
-testtt: CMakeFiles\testtt.dir\rule
-.PHONY : testtt
+BrasRobot: CMakeFiles\BrasRobot.dir\rule
+.PHONY : BrasRobot
 
 # clean rule for target.
-CMakeFiles\testtt.dir\clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\clean
-.PHONY : CMakeFiles\testtt.dir\clean
+CMakeFiles\BrasRobot.dir\clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\clean
+.PHONY : CMakeFiles\BrasRobot.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

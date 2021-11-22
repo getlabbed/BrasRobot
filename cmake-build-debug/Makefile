@@ -54,16 +54,6 @@ CMAKE_BINARY_DIR = C:\Git\BrasRobot\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	echo >nul && "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache\fast: rebuild_cache
-.PHONY : rebuild_cache\fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -73,6 +63,16 @@ edit_cache:
 # Special rule for the target edit_cache
 edit_cache\fast: edit_cache
 .PHONY : edit_cache\fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	echo >nul && "C:\Program Files\JetBrains\CLion 2021.2\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache\fast: rebuild_cache
+.PHONY : rebuild_cache\fast
 
 # The main all target
 all: cmake_check_build_system
@@ -106,24 +106,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testtt
+# Target rules for targets named BrasRobot
 
 # Build rule for target.
-testtt: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) testtt
-.PHONY : testtt
+BrasRobot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) BrasRobot
+.PHONY : BrasRobot
 
 # fast build rule for target.
-testtt\fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\build
-.PHONY : testtt\fast
+BrasRobot\fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\build
+.PHONY : BrasRobot\fast
 
 main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -131,7 +131,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -139,7 +139,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\testtt.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\testtt.dir\main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BrasRobot.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\BrasRobot.dir\main.c.s
 .PHONY : main.c.s
 
 # Help Target
@@ -150,7 +150,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... testtt
+	@echo ... BrasRobot
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
