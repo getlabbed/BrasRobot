@@ -1,5 +1,5 @@
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
 }
 
 void loop() {
@@ -8,12 +8,12 @@ void loop() {
 
   if(c == 'N')
   {
-    Serial.print("OK");
+    Serial.println("OK");
   }
     String sSeriel = Serial.readStringUntil('\n');
     if(sSeriel == "SOS")
     {
-      Serial.print("NON");
+      Serial.println("NON");
     }
   delay(1000);
 }
