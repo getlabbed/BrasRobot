@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
   "BrasRobot.exe"
   "BrasRobot.exe.manifest"
-  "BrasRobot.lib"
   "BrasRobot.pdb"
   "CMakeFiles/BrasRobot.dir/main.c.obj"
+  "libBrasRobot.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
